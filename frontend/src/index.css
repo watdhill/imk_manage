@@ -1,0 +1,61 @@
+:root {
+  --text: #45414f;
+  --text-h: #0f172a;
+  --bg: #f5f7fb;
+  --border: #d8dde8;
+  --code-bg: #eef2ff;
+  --accent: #2563eb;
+  --accent-bg: rgba(37, 99, 235, 0.1);
+  --accent-border: rgba(37, 99, 235, 0.45);
+  --social-bg: rgba(255, 255, 255, 0.65);
+  --shadow:
+    rgba(15, 23, 42, 0.08) 0 18px 40px -12px,
+    rgba(15, 23, 42, 0.04) 0 8px 20px -10px;
+
+  --sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --heading: Georgia, 'Times New Roman', serif;
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  font: 16px/1.5 var(--sans);
+  color-scheme: light;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(255, 201, 123, 0.5), transparent 30%),
+    radial-gradient(circle at right bottom, rgba(59, 130, 246, 0.16), transparent 35%),
+    var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.18);
+  color: var(--text-h);
+}
